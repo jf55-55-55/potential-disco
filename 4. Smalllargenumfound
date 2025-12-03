@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {5, 3, 9, 1, 8};
+        int sml = arr[0], lrg = arr[0];
+
+        for (int n : arr) {
+            if (n < sml) sml = n;
+            if (n > lrg) lrg = n;
+        }
+
+        System.out.println("small: " + sml);
+        System.out.println("large: " + lrg);
+    }
+}
