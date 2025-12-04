@@ -1,0 +1,15 @@
+public class MinimumOccurrences {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 2, 2, 3, 4, 5};
+        int target = 2;
+        int minOccurrences = 3;
+        int count = 0;
+        for (int num : arr) {
+            if (num == target) {
+                count++;
+            }
+        }
+        boolean appearsAtLeast = count >= minOccurrences;
+        System.out.println("Appears at least " + minOccurrences + " times: " + appearsAtLeast);
+    }
+}
